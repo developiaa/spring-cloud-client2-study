@@ -16,6 +16,6 @@ public class CatalogServiceImpl implements CatalogService{
 
     @Override
     public Iterable<CatalogEntity> getAllCatalogs() {
-        return null;
+        return catalogRepository.findAll();
     }
 }
